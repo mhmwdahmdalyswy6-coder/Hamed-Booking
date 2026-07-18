@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز دروس الأستاذ حامد السعداوي</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>حجز دروس الأستاذ حامد السعداوي</h1>
+
+    <img src="images/hamed.png" class="teacher" alt="الأستاذ حامد السعداوي">
+
+<p class="subtitle">
+    كبير معلمي العلوم والعلوم المتكاملة والكيمياء بإدارة فاقوس التعليمية
+</p>
+    <div id="branches">
+
+    <h2>اختر الفرع</h2>
+
+    <button type="button" onclick="selectBranch('أشكر')">
+        📍 فرع أشكر
+    </button>
+
+    <button type="button" onclick="selectBranch('الديدامون')">
+        📍 فرع الديدامون
+    </button>
+
+    <button type="button" onclick="selectBranch('فاقوس')">
+        📍 فرع فاقوس
+    </button>
+
+</div>
+
+    <form id="bookingForm" style="display:none;">
+
+    <input type="hidden" id="branch">
+
+    <label>اسم الطالب</label>
+    <input type="text" id="name" placeholder="اكتب اسم الطالب" required>
+
+    <label>رقم الموبايل</label>
+    <input type="tel" id="phone" placeholder="01xxxxxxxxx" required>
+
+        <label>الصف الدراسي</label>
+        <select id="grade" required>
+            <option value="">اختر الصف</option>
+            <option>أولى إعدادي - علوم</option>
+            <option>ثانية إعدادي - علوم</option>
+            <option>ثالثة إعدادي - علوم</option>
+            <option>أولى ثانوي - علوم متكاملة</option>
+            <option>ثانية ثانوي - كيمياء</option>
+            <option>ثالثة ثانوي - كيمياء</option>
+        </select>
+
+        <button type="submit">تأكيد الحجز</button>
+
+    </form>
+
+    <div id="successMessage" style="display:none; margin-top:20px; background:#e8f5e9; border:2px solid #4caf50; padding:20px; border-radius:12px; text-align:center;">
+
+        <h2 style="color:#2e7d32;">✅ تم تسجيل الحجز بنجاح</h2>
+
+
+        <hr>
+
+        <h3>Al-Esawy Design</h3>
+
+        <p>
+            خليك مميز... وسيب الباقي علينا.<br>
+            تصميمات احترافية • طباعة عالية الجودة • تنفيذ سريع بأسعار تنافسية.
+        </p>
+
+        <p>
+            طباعة على التيشيرتات • المجات • الميداليات • التابلوهات • الدروع
+        </p>
+
+        <p>
+            للتواصل<br>
+            📞 01007801549
+        </p>
+
+        <button onclick="location.reload()">
+            تسجيل طالب آخر
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
